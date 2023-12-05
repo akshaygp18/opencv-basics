@@ -49,6 +49,10 @@ cv.imshow("Resized", resized)
 flip = cv.flip(img, 0)
 cv.imshow("Flipped", flip)
 
+# Cropping
+
+cropping = img[200:400, 300:400]
+cv.imshow("cropped", cropping)
 
 cv.waitKey(0)
 cv.destroyAllWindows()
