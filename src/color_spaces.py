@@ -1,8 +1,13 @@
 import cv2 as cv
 import numpy as np
+import matplotlib.pyplot as plt
 
 img = cv.imread('imgs/beach.jpg')
 cv.imshow('Beach', img)
+
+
+plt.imshow(img)
+plt.show()
 
 # BGR to grayscale image
 
@@ -19,5 +24,7 @@ cv.imshow('HSV', hsv)
 lab = cv.cvtColor(img, cv.COLOR_BGR2LAB)
 cv.imshow('Lab', lab)            
 
-cv.waitKey(0)
-cv.destroyAllWindows()
+
+
+# cv.waitKey(0)
+# cv.destroyAllWindows()
