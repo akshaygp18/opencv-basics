@@ -6,8 +6,8 @@ img = cv.imread('imgs/beach.jpg')
 cv.imshow('Beach', img)
 
 
-plt.imshow(img)
-plt.show()
+# plt.imshow(img)
+# plt.show()
 
 # BGR to grayscale image
 
@@ -22,9 +22,14 @@ cv.imshow('HSV', hsv)
 # BGR to LAB
 
 lab = cv.cvtColor(img, cv.COLOR_BGR2LAB)
-cv.imshow('Lab', lab)            
+cv.imshow('Lab', lab) 
+
+# BGR to RGB image
+
+rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+cv.imshow('RGB', rgb)
 
 
 
-# cv.waitKey(0)
-# cv.destroyAllWindows()
+cv.waitKey(0)
+cv.destroyAllWindows()
