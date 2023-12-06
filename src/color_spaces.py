@@ -34,6 +34,11 @@ cv.imshow('RGB', rgb)
 hsv_bgr = cv.cvtColor(hsv, cv.COLOR_HSV2BGR)
 cv.imshow("HSV-->BGR", hsv_bgr)
 
+# HSV to BGR
+
+lab_bgr = cv.cvtColor(lab, cv.COLOR_LAB2BGR)
+cv.imshow("LAB-->BGR", lab_bgr)
+
 
 cv.waitKey(0)
 cv.destroyAllWindows()
