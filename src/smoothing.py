@@ -15,5 +15,10 @@ cv.imshow('Average', average)
 gauss = cv.GaussianBlur(img, (3,3), 0)
 cv.imshow('Gaussian Blur', gauss)
 
+# Median Blur
+
+median = cv.medianBlur(img, 3)
+cv.imshow('Median', median)
+
 cv.waitKey(0)
 cv.destroyAllWindows()
