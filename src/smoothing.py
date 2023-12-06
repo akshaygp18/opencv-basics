@@ -10,7 +10,10 @@ cv.imshow('Beach', img)
 average = cv.blur(img, (3,3))
 cv.imshow('Average', average)
 
+# Gaussian Blur
 
+gauss = cv.GaussianBlur(img, (3,3), 0)
+cv.imshow('Gaussian Blur', gauss)
 
 cv.waitKey(0)
 cv.destroyAllWindows()
