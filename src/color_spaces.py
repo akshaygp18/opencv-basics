@@ -9,5 +9,10 @@ cv.imshow('Beach', img)
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Grayscale', gray)
 
+# BGR to hsv image
+
+hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
+cv.imshow('HSV', hsv)
+
 cv.waitKey(0)
 cv.destroyAllWindows()
